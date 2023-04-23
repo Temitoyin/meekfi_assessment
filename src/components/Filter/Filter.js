@@ -22,7 +22,7 @@ const Filter = ({ filterData }) => {
         className="w-full h-full flex items-center justify-between cursor-pointer"
         onClick={() => setShowFilter(!showFilter)}
       >
-        <p className="mr-[8px]">{title}</p>
+        <p className=" text-xs">{title}</p>
         <Icon name="vector-down" />
       </div>
       {showFilter && (
@@ -30,7 +30,7 @@ const Filter = ({ filterData }) => {
           {filterData &&
             filterData.map((data, i) => (
               <div
-                className="px-[13px] bg-white h-[32px] flex items-center hover:bg-blue-100 hover:text-gray-600 cursor-pointer"
+                className="px-[13px] bg-white h-[32px] flex items-center hover:bg-blue-100 hover:text-gray-600 cursor-pointer "
                 data_attribute_title={data.title}
                 key={i}
                 onClick={(e) => {
@@ -38,8 +38,9 @@ const Filter = ({ filterData }) => {
                   data.onClick();
                 }}
               >
-                {/* {console.log(typeof data.onClick, "data")} */}
-                <p data_attribute_title={data.title}>{data.title}</p>
+                <p className="text-xs" data_attribute_title={data.title}>
+                  {data.title}
+                </p>
               </div>
             ))}
         </div>

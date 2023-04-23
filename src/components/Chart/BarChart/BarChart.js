@@ -29,19 +29,19 @@ const BarChart = () => {
   const [chartData, setChartData] = useState([65, 59, 80, 81, 56, 55, 40]);
   const filterData = [
     {
-      title: "7 Days",
+      title: "Last 7 Days",
       onClick: () => {
         setChartData([65, 59, 80, 81, 56, 55, 40]);
       },
     },
     {
-      title: "3 Days",
+      title: "Last 3 Days",
       onClick: () => {
         setChartData([50, 45, 70, 74, 35, 45, 30]);
       },
     },
     {
-      title: "24 Hours",
+      title: "Last 24 Hours",
       onClick: () => {
         setChartData([23, 24, 50, 31, 22, 25, 10]);
       },
