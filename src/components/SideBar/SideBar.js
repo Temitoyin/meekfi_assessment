@@ -9,7 +9,7 @@ import Icon from "@components/Icon/icon";
  */
 const SideBar = () => {
   return (
-    <div className="w-[255px] text-center px-[24px] bg-blue-200 h-full hidden lg:block fixed">
+    <div className="w-[255px] text-center px-[24px] bg-blue-200 h-full hidden lg:block fixed cursor-pointer">
       <div className="pt-[40px]">
         <h1 className="font-light text-4xl font-pacifico">Meekfi</h1>
       </div>

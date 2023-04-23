@@ -27,19 +27,19 @@ const PieChart = () => {
 
   const filterData = [
     {
-      title: "6 Months",
+      title: "Last 6 Months",
       onClick: () => {
         setChartData([10, 20, 15, 19, 20, 21]);
       },
     },
     {
-      title: "3 Months",
+      title: "Last 3 Months",
       onClick: () => {
         setChartData([5, 25, 10, 14, 15, 31]);
       },
     },
     {
-      title: "1 Month",
+      title: "Last 1 Month",
       onClick: () => {
         setChartData([15, 22, 18, 11, 29, 5]);
       },

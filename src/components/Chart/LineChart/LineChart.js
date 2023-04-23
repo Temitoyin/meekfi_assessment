@@ -46,7 +46,7 @@ const LineChart = () => {
   });
   const filterData = [
     {
-      title: "12 Months",
+      title: "Last 12 Months",
       onClick: () => {
         setChartData({
           labels: [
@@ -68,20 +68,27 @@ const LineChart = () => {
       },
     },
     {
-      title: "6 Months",
+      title: "Last 6 Months",
       onClick: () => {
         setChartData({
-          labels: ["January", "February", "March", "April", "May", "June"],
-          data: [100, 123, 300, 439, 500, 630],
+          labels: [
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ],
+          data: [530, 722, 445, 834, 934, 1002],
         });
       },
     },
     {
-      title: "3 Months",
+      title: "Last 3 Months",
       onClick: () => {
         setChartData({
-          labels: ["January", "February", "March"],
-          data: [100, 123, 300],
+          labels: ["October", "November", "December"],
+          data: [834, 934, 1002],
         });
       },
     },

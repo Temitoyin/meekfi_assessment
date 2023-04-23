@@ -11,7 +11,7 @@ const Navigation = () => {
       <div>
         <h1 className="font-mono">Dashboard</h1>
       </div>
-      <div className="flex  justify-between items-center w-[160px] px-[17px]">
+      <div className="flex  justify-between items-center w-[160px] px-[17px] cursor-pointer">
         <div className="mr-[4px]">
           <Icon name="profile" />
         </div>
